@@ -13,29 +13,28 @@ function nombreDeUsuarios () {
     
 }
 
-console.log(nombreDeUsuarios())
+//console.log(nombreDeUsuarios())
 
 function nombreRepetidos () {
 
-    const cantidadNombre =[]
+    const contador ={}
 
     nombreDeUsuarios().forEach( nombre => {
-        const nombres = nombreDeUsuarios().filter( n => n === nombre)
-
-        if(nombres.length > 1) {
-            cantidadNombre.push(nombre)
-        }
-
+        if(contador[nombre]) {
+            contador[nombre]++
+        }else { contador[nombre] = 1}
     })
-
-
-    return cantidadNombre
+    const nombres = [
+        {nombre:"niry"},
+        {nombre:"maikol"}
+    ]
+    return Object.keys(contador).filter(nombre => nombres.some(nombres => nombres.nombre === nombre))
 }
 
 console.log(nombreRepetidos())
 
 function cantidadNombreRepetidos () {
-    return nombreRepetidos().length
+    //return nombreRepetidos().length
 }
 
-console.log(cantidadNombreRepetidos() + " nombres Repetidos")
+//console.log(cantidadNombreRepetidos() + " nombres Repetidos")
