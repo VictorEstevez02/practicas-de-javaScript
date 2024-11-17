@@ -1,14 +1,16 @@
 
+const color = document.querySelector(".color")
 
-const colores = ["red","blue","green","black","yellow"]
+const colors = ["blue","yellow","green","red","brown"]
 
-let indice = 0
+let indexColor = 0
 
-function cambiarColor () {
-    const color = colores[indice]
-    document.body.style.backgroundColor = color;
-    indice++
-    if(indice > colores.length -1) {
-        indice = 0
+function getColor () {
+    document.body.style.backgroundColor = colors[indexColor]
+    color.textContent = colors[indexColor]
+    indexColor++
+
+    if(indexColor >= colors.length) {
+        indexColor = 0
     }
 }

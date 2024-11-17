@@ -1,30 +1,27 @@
-const label = document.getElementById("number")
+const span = document.getElementById("span");
 
 let number = 0;
 
-function aumentar() {
-    number++
+function increase() {
+  number++;
+  span.textContent = number;
 
-    label.textContent = number
-
-    if (number > 0) {
-        label.style.color = "green"
-    }
+  if (number > 0) {
+    span.style.color = "green";
+  }
 }
 
-function desminuir() {
-    number--
-    label.textContent = number
+function decrease() {
+  number--;
+  span.textContent = number;
 
-    if (number < 0) {
-        label.style.color = "red"
-    }
+  if (number < 0) {
+    span.style.color = "red";
+  }
 }
 
-function reiniciar() {
-    number = 0
-    label.textContent = number
-
-    label.style.color = "black"
+function reset() {
+  number = 0;
+  span.textContent = number;
+    span.style.color = "black";
 }
-

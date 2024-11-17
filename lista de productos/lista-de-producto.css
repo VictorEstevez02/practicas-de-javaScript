@@ -1,0 +1,10 @@
+.container{
+    
+    background-color:rgb(144, 176, 236);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

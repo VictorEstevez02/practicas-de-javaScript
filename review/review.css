@@ -1,0 +1,27 @@
+#img{
+   width: 150;
+    border-radius: 200px;
+    height: 150px;
+}
+.article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+  padding: 50px;
+  border-radius: 70px;
+}
+  #job {
+    text-transform: uppercase;
+    font-size: 25;
+    color: blueviolet;
+  }
+
+  #authour{
+    text-transform: uppercase;
+    font-size: 25;
+    color: black;
+  }
+  #info{
+    color: #131418cf;
+  }

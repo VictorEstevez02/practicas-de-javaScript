@@ -1,23 +1,32 @@
 <html>
+    <link rel="stylesheet" href="lista-de-producto.css" />
 
 <style>
     .selected {
         background-color: #f0f0f0;
     }
 </style>
-
-<title>Lista de Productos</title>
-
-<h1>Lista  de Productos</h1>
-
-<input id="input" type="text">
-
-<ul id="lista-producto"></ul>
-
 <div>
-    <button onclick="agregarProducto()">Agregar Producto</button>
-    <button onclick="eliminarProducto()">Eliminar Producto</button>
+    <h1>Lista de Productos</h1>
+</div>
+
+<div class="container">
+    
+    <div class="box">
+        <label for="text">Fruta : </label>
+        <input id="input" type="text">
+    </div>
+
+    <div class="box">
+        <ul id="lista-producto"></ul>
+    </div>
+
+    <div class="box">
+        <button onclick="agregarProducto()">Agregar Producto</button>
+        <button onclick="eliminarProducto()">Eliminar Producto</button>
+    </div>
 </div>
 
 <script src="lista-de-producto.js"></script>
+
 </html>
