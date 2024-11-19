@@ -29,6 +29,7 @@ const people = [
     }
 ]
 
+
 const img = document.getElementById('img')
 const authour = document.getElementById('authour')
 const job = document.getElementById('job')
@@ -46,7 +47,7 @@ function showPerson(person){
     info.textContent = item.text
 }
 
-function btnLeft() {
+function btnRight() {
     personIndex++
     if(personIndex > people.length -1) {
         personIndex = 0
@@ -55,7 +56,7 @@ function btnLeft() {
     showPerson(personIndex)
 }
 
-function btnRight() {
+function btnLeft() {
     personIndex--
 
     if(personIndex < 0) {
