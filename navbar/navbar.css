@@ -39,11 +39,6 @@ li {
 
 .social-icons {
     display: none;
-    color: white;
-}
-
-.social-icons>li>a:hover {
-    color: black;
 }
 
 .links {
@@ -89,6 +84,9 @@ li {
     .social-icons a {
         margin: 10px;
         color: white;
+    }
+    .social-icons a:hover {
+        color: black;
     }
 
 }
